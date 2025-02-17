@@ -1,0 +1,39 @@
+img{
+	background-color: yellow;
+	border-top-right-radius: 130px;
+	border-top-left-radius: 130px;
+	border-bottom-right-radius: 150px;
+	border-bottom-left-radius: 150px;
+}
+body{
+	background-color: lightcyan;
+	width: 800px;
+	height: auto;
+	border: dashed 5px maroon ;
+}
+h1{
+	color: maroon;
+	text-align: center;
+}
+p{
+	color: green;
+	border: solid 1px gray;
+	border-radius: 15px;
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+	color: cornflowerblue;
+}
+a:visited{
+	color: rgb(45, 78, 96);
+}
+a:hover{
+	text-decoration: underline;
+}
+ul{
+	border: black solid 1px;
+	border-radius: 15px;
+	padding: 5px;
+}
+

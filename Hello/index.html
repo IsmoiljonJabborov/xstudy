@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+
+	body{
+		border: 2px, dotted black;
+		margin-right: 20px;
+		margin-left: 20px;
+		padding: 2px;
+		background-color: linen;
+	}
+	.nav{
+		height:50px;
+		background:darkgrey;
+	}
+	.nav div{
+		border: 2px, solid black;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		padding: 15px;
+		font-size: 20px;
+		color: black;
+		font-style: italic;
+		margin-left: -12px;
+		margin-right: -12px;
+		border: 0px solid black;	
+	}
+	.nav ul{
+		position: absolute;
+		right: 5px;
+	}
+	.nav ul li{
+		display: inline-block;
+	}
+	.nav ul li a{
+		color: black;
+		padding:5px;
+		font-style: italic;
+	}
+	.home{
+		background:url(), url("cat.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 900px;
+		margin-left: -22px;
+		margin-right: -22px;
+		margin-bottom: 20px;
+		margin-top: -10px;	
+		opacity:100%;	
+	}
+	.home .text-container{
+		text-align: left;
+		display: flex;
+		align-items: top;
+		justify-content: left;
+		color: black;
+		margin-left: 5px;
+		margin-top: 0px;
+		font-size: 25px;
+		font-style: italic;
+	}
+	#forms{
+		background: linen;
+	}
+	.username{
+		text-align: center;
+		color: blue;
+		font-family: Times New Roman, serif;
+		animation: myframe 0.50s no-repeat alternate;
+	}
+	@keyframes myframe {
+		from{
+			margin-left: 250px;
+		}
+		to{
+			margin-right: 250px;
+		} 
+	}
+
+	/* Dropdown Button */
+.dropp {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+	<title>World of programming</title>
+</head>
+<body> 
+<div class="home">
+		<!--<div class="nav">-->
+			<div class="dropdown">
+			<div><b>Ismoiljon.J</b></div>
+				<ul>
+				<li class="dropp">Home</li>
+				<div class="dropdown-content">
+					<a href="#" title="nowhere">Sign in</a>
+					<a href="#" title="nowhere">Log in</a>
+					<a href="#" title="nowhere">Log out</a>
+				</div>
+			</div>		
+			<div class="dropdown">		
+							<li class="dropp">Recources</li>
+				<div class="dropdown-content">
+					<a href="#">Izolon</a>
+					<a href="#">Evrolon</a>
+					<a href="#">Famiran</a>
+				</div>
+			</div>
+				<div class="dropdown">
+							<li class="dropp">Contact</li>
+				<div class="dropdown-content">
+					<a href="#">Telegram</a>
+					<a href="#">Instagram</a>
+					<a href="#">Facebook</a>
+				</div>
+			</div>
+				</ul>
+</div>
+		<!--
+		<div class="dropdown">
+			<p class="dropp">Home</p>
+			<div class="dropdown-content">
+				<a href="#" title="nowhere">Sign in</a>
+				<a href="#" title="nowhere">Log in</a>
+				<a href="#" title="nowhere">Log out</a>
+			</div>
+		</div>
+					-->
+	
+	<div class="jumbotron text-container">
+		<div>
+	<h1>Assalomu alaykum.</h1>
+	<p>Olam olam yangiliklardan boxabar bo'lish uchun xush kelibsiz.</p>
+	<h2>Assalomu alaykum.</h2>
+	<p>Hayrli tong tilagan holatda biz o'z ishimzini ya'ni o'rganishimizni boshladik.</p>
+	<p>Dasturlash olamiga xush kelibsiz. :)</p>
+		</div>
+	</div>
+</div>
+<div id="forms">
+<div class="username">
+	<form action="https://www.google.com" method="post" target="_blank">
+		<p><i>Foydalanuvchi ismi: </m><br>
+			<input type="text" name="username" maxlength="10" title="you can only type 10 letters." required />
+		</p>
+		<p><em>Maxsus kod:  </em><br>
+			<input type="password" name="password" title="any number and one uppercase and lowercase letter." maxlength="7" required=""></p>
+	<input type="submit" name="sign in" value="Tizimga kirish" title="Brings you to google."></form>
+	<input type="reset" name="" value="Qayta kiritish">	
+</div><hr/>
+<div class="like" style="text-align: center;"> <form action="https://www.google.com" method="get">
+	<p><b>Quyidagilardan yoqqanini tanglang:</b> <br/>
+	<input type="radio" name="clothes" value="Jinsi" checked="checked" title="sifatli"> Jinsi
+	<input type="radio" name="clothes" value="Shapka" title="qimmat">Shapka
+	<input type="radio" name="clothes" value="Futbolka" title="arzon">Futbolka
+	</p>
+</form>
+</div><hr/>
+<div class="like" style="text-align: center;"><form action="https://www.google.com" method="get">
+	<p><strong>Ushbulardan sizga eng yoqannini tanlashinggiz mumkin:</strong> <br/>
+		<input type="checkbox" name="yoqtirilgan" value="Iphone" title="Qimmat" checked="checked">Iphone
+		<input type="checkbox" name="yoqtirilgan" value="Samsung" title="Qulay">Samsung
+		<input type="checkbox" name="yoqtirilgan" value="Redmi" title="Sifatsiz ammo arzon">Redmi</p>
+</form></div><hr/>
+<!--
+<div class="form"><form action="https://www.google.com" method="get">
+	<p><strong><mark>Xo'sh bugun soat nechchida osh pishgan bo'ladi?</mark></strong>
+		<select  name="soatlar">
+			<option value="13:30" title="deyarli yo'q">11:30</option>
+			<option value="15:00" title="ehtimol">15:00</option>
+			<option value="17:20" title="shomdan oldin" selected="selected">17:20</option>
+		</select></p>
+</form></div> <hr/>-->
+<div class="choose" style="text-align: center;"><form action="https://www.google.com" method="get">
+	<p><b>Bir qancha to'plamlardan istalganini tanlang: </b><br/>
+	<select name="to'plam" size="3" multiple="multiple">
+		<option value="Tashkent city" title="The most expensive">Tashkent city</option>
+		<option value="Murad buildings" title="The middle class">Murad buildings</option>
+		<option value="Olmazor city" title="The normal one">Olmazor city</option>
+		<option value="Minor buildings" title="Good choice">Minor buildings</option>
+	</select><br><br>
+<input type="submit" name="to'plam" value="Tasdiqlash"></p>
+</form></div> <hr/>
+<div class="form"><form action="https://www.google.com" method="post">
+	<p><b>Faylni yuklang: </b><br/>
+		<input type="file" name="song" title="You should submit only the song."><br/><br/>
+		<input type="submit" value="Yuklash"/></p>
+</form></div><hr/>
+<div class="form"><form action="https://t.me/folwersshop602">
+	<p><i>Bizga qo'shilish uchun, "Kanalga qo'shilish" tugmasini bosing.</i> <br>
+		<input type="submit" value="Kanalga qo'shilish"></p>
+</form></div><hr>
+<!--<div class="form"><form action="https://www.google.com" method="get">
+<button> Add
+<input type="hidden" name="lyrics" value="bookmark"></button>
+</form></div><hr/>-->
+<div class="form"><form action="https://www.google.com">
+	<label>Age: <input type="number" name="age" title="Enter the age" required="" /></label><br>
+	Gender:
+	<input id="male" type="radio" name="gender" value="m" required="">
+	<label for="male">Male</label>
+	<input id="female" type="radio" name="gender" value="f">
+	<label for="female">Female</label><br>
+	<input type="submit" value="Submit">
+</form></div><hr>
+<div style="text-align: center;">
+<p style="font-style: italic;"><strong>Maher Zain - Ya Nabi Salam Alayka<br></strong>
+	<audio src="http://melody4arab.com/music/lebnan/maher_zain/thank_you_allah_/Ya_Nabi_Salam_Alayka_melody4arab.com.mp3" controls="" loop="" title="Maher zain" >
+	</audio><br><strong>
+		<!--
+		<div style="text-align: center;">
+	<p><a href="http://www.faizan-e-mohammad.com/download.php?id=3251&format=mp4">Maher Zain - Ya Nabi Salam Alayka(video)</a><br>
+		<video src="http://www.faizan-e-mohammad.com/download.php?id=3251&format=mp4"
+		 controls="" loop="" 
+		 poster="https://mp4-music-dl.xyz/images/maher-zain-ya-nabi-salam-alayka_qpt2zntc/30.jpg">
+	</video></p>
+</div><hr>-->
+		Maher Zain - The Power <br></strong>
+		<audio src="http://melody4arab.com/music/lebnan/maher_zain/no_album/The_Power_Melody4Arab.Com.mp3" 
+		controls="" loop="" 
+		title="The Power" preload="auto"></audio> <br>
+</p>
+</div>
+
+</div>
+</body>
+</html>
